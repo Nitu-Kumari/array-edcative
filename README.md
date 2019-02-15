@@ -35,3 +35,61 @@ function removeEven(arr) {
 }
 console.log(removeEven([3, 2, 41, 3, 34]))
 ~~~
+
+#Find Minimum Value in Array
+~~~
+function findMinimum(arr){
+  arr.sort(arr.sort(function(a,b){
+      return a-b
+  }))  
+  return arr[0]
+}
+console.log(findMinimum([19,12,13,16,11]))
+~~~
+
+
+
+#First Non-Repeating Integer in an Array
+~~~
+var str="abcdca";
+for (var i=0;i<str.length; i++){
+
+    if (str.indexOf(str.charAt(i))==str.lastIndexOf(str.charAt(i))){
+
+        console.log(str.charAt(i));
+        break;
+    }
+}
+~~~
+
+# 6 Find Second Maximum Value in an Array?
+~~~
+that mean
+1,2,5,6,8
+2nd largest value
+6
+
+function findSecondMaximum(arr){
+  arr.sort(function(a, b) {
+        return a - b
+    })
+  if(arr.length >= 2)
+    return arr[arr.length-2]
+  else
+    return null
+}
+
+console.log(findSecondMaximum([1,2,5,6,8]))
+~~~
+
+
+
+
+
+
+
+
+
+
+
+
